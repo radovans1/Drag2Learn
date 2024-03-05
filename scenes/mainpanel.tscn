@@ -1,0 +1,89 @@
+[gd_scene load_steps=8 format=3 uid="uid://bcow1lwadwcvy"]
+
+[ext_resource type="Texture2D" uid="uid://dg763tk4b552i" path="res://assets/background2.png" id="1_kwoi4"]
+[ext_resource type="Script" path="res://scripts/newgame.gd" id="2_5wjgw"]
+[ext_resource type="Script" path="res://scripts/endgame.gd" id="3_5b6rw"]
+
+[sub_resource type="SystemFont" id="SystemFont_rscky"]
+font_names = PackedStringArray("Arial Rounded MT")
+
+[sub_resource type="SystemFont" id="SystemFont_dhns4"]
+font_names = PackedStringArray("Arial Rounded MT")
+
+[sub_resource type="SystemFont" id="SystemFont_1cahi"]
+font_names = PackedStringArray("Arial Rounded MT")
+
+[sub_resource type="SystemFont" id="SystemFont_vni1f"]
+font_names = PackedStringArray("Arial Rounded MT", "")
+
+[node name="mainpanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_kwoi4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -442.5
+offset_top = -229.5
+offset_right = 442.5
+offset_bottom = 229.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="background/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = SubResource("SystemFont_rscky")
+theme_override_font_sizes/font_size = 150
+text = "Drag2Learn"
+
+[node name="HSeparator" type="Control" parent="background/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="background/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="newgame" type="Button" parent="background/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_dhns4")
+theme_override_font_sizes/font_size = 56
+text = "Start"
+script = ExtResource("2_5wjgw")
+
+[node name="settings" type="Button" parent="background/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_1cahi")
+theme_override_font_sizes/font_size = 56
+text = "Settings"
+
+[node name="endgame" type="Button" parent="background/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_vni1f")
+theme_override_font_sizes/font_size = 56
+text = "End"
+script = ExtResource("3_5b6rw")
+
+[connection signal="pressed" from="background/VBoxContainer/VBoxContainer/newgame" to="background/VBoxContainer/VBoxContainer/newgame" method="_on_pressed"]
+[connection signal="pressed" from="background/VBoxContainer/VBoxContainer/endgame" to="background/VBoxContainer/VBoxContainer/endgame" method="_on_pressed"]

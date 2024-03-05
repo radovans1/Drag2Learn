@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://b47ohhjmshatw"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_yr1kk"]
+[ext_resource type="Texture2D" uid="uid://cj6dbqk2ergme" path="res://assets/animals/animals-vector-free-icon-set-40.png" id="2_ioy0m"]
+
+[resource]
+script = ExtResource("1_yr1kk")
+key = "sheep"
+label = "Sheep"
+texture = ExtResource("2_ioy0m")

@@ -1,0 +1,96 @@
+[gd_scene load_steps=13 format=3 uid="uid://dqabaemjt44th"]
+
+[ext_resource type="PackedScene" uid="uid://yimgncj4bkku" path="res://scenes/slot.tscn" id="1_44wfq"]
+[ext_resource type="Script" path="res://scripts/test.gd" id="1_v4epg"]
+[ext_resource type="Resource" uid="uid://de7sl8br6yamp" path="res://assets/pieces/cow.tres" id="2_2q6cg"]
+[ext_resource type="Resource" uid="uid://dl11ufr2sbq3w" path="res://assets/pieces/dog.tres" id="2_yemv7"]
+[ext_resource type="Resource" uid="uid://b47ohhjmshatw" path="res://assets/pieces/sheep.tres" id="4_ij81a"]
+[ext_resource type="Resource" uid="uid://d3q0obhdv77qn" path="res://assets/pieces/cat.tres" id="6_kmam0"]
+[ext_resource type="Resource" uid="uid://c8dy6xd8iwxex" path="res://assets/pieces/chicken.tres" id="7_8fp00"]
+[ext_resource type="Resource" uid="uid://bwv31i47est07" path="res://assets/pieces/rabbit.tres" id="8_su6uw"]
+[ext_resource type="Resource" uid="uid://difrbe5jv62g" path="res://assets/pieces/pig.tres" id="9_e0gww"]
+[ext_resource type="Resource" uid="uid://b7ll3xnwycn8k" path="res://assets/pieces/horse.tres" id="10_vyqi6"]
+[ext_resource type="Resource" uid="uid://djcov1ibicmjw" path="res://assets/pieces/mouse.tres" id="11_6yyl4"]
+[ext_resource type="PackedScene" uid="uid://b1yn774ts8iud" path="res://scenes/score.tscn" id="12_he5oh"]
+
+[node name="test" type="Node2D"]
+script = ExtResource("1_v4epg")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="UI"]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 49.0
+offset_right = 759.0
+offset_bottom = 417.0
+columns = 3
+
+[node name="slot" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("2_2q6cg")
+
+[node name="Label" parent="UI/GridContainer/slot" index="1"]
+text = "Cow"
+
+[node name="slot5" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("2_yemv7")
+
+[node name="slot6" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("4_ij81a")
+
+[node name="slot7" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("6_kmam0")
+
+[node name="slot8" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("7_8fp00")
+
+[node name="slot9" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("8_su6uw")
+
+[node name="slot2" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("9_e0gww")
+
+[node name="slot3" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("11_6yyl4")
+
+[node name="slot4" parent="UI/GridContainer" instance=ExtResource("1_44wfq")]
+layout_mode = 2
+piece = ExtResource("10_vyqi6")
+
+[node name="slot4" parent="UI" instance=ExtResource("1_44wfq")]
+layout_mode = 0
+offset_left = 518.0
+offset_top = 483.0
+offset_right = 638.0
+offset_bottom = 603.0
+is_source = true
+
+[node name="Score" parent="." instance=ExtResource("12_he5oh")]
+
+[connection signal="animal_dropped" from="UI/GridContainer/slot" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/GridContainer/slot5" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/GridContainer/slot6" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/GridContainer/slot7" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/GridContainer/slot8" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/GridContainer/slot9" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/GridContainer/slot2" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/GridContainer/slot3" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/GridContainer/slot4" to="." method="_on_slot_animal_dropped"]
+[connection signal="animal_dropped" from="UI/slot4" to="." method="_on_slot_animal_dropped"]
+
+[editable path="UI/GridContainer/slot"]
+[editable path="UI/slot4"]

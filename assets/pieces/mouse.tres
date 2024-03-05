@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://djcov1ibicmjw"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_ubmio"]
+[ext_resource type="Texture2D" uid="uid://7nsipvlmoioy" path="res://assets/animals/animals-vector-free-icon-set-32.png" id="2_rshwv"]
+
+[resource]
+script = ExtResource("1_ubmio")
+key = "mouse"
+label = "Mouse"
+texture = ExtResource("2_rshwv")
