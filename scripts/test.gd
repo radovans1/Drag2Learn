@@ -34,18 +34,23 @@ func _ready() -> void:
 	animals.shuffle()
 	new_animal()
 	source_slot.connect("animal_dropped", Callable(self, "_on_slot_animal_dropped"))
-
+	update_score_display()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
-
+	
+	
 func new_animal():
 	var animal = animals.pop_front()
 	source_slot.set_piece(animal)
 
-func _on_slot_animal_dropped() -> void:
-	add_score(10)
-	source_slot.set_piece(null)
-	new_animal()
+func _on_slot_animal_dropped(is_correct: bool) -> void:
+	if is_correct:
+		add_score(10)
+		source_slot.set_piece(null)			#delete correctly dropped piece 
+		new_animal()
+	else:
+		add_score(-5)
+	#source_slot.set_piece(null)
+	#new_animal()

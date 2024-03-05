@@ -1,2 +1,2 @@
-# Drag2Learn
- 2D drag&drop game developed for bachelors degree purposes. 
+# DRAGnDROP_game
+ My next try for bc project
