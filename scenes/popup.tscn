@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8bxqw8o88jqj"]
+
+[ext_resource type="Script" path="res://scripts/popup.gd" id="1_oms8u"]
+
+[sub_resource type="SystemFont" id="SystemFont_ffbiv"]
+font_weight = 600
+font_stretch = 125
+
+[node name="PopupPanel" type="Window"]
+transparent_bg = true
+title = "Results"
+initial_position = 2
+size = Vector2i(400, 400)
+theme_override_colors/title_color = Color(0, 0, 0, 1)
+script = ExtResource("1_oms8u")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.505882, 0.298039, 0.027451, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_ffbiv")
+theme_override_font_sizes/font_size = 35
+text = "CONGRATULATIONS!"
+horizontal_alignment = 1
+
+[node name="CorrectCountLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="IncorrectCountLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TotalScoreLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
