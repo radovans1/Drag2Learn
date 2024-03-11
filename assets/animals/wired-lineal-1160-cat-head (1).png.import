@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eqkpib7htt1e"
-path="res://.godot/imported/character 2.1.png-15220423ffe3ab090b246352bf4b52f5.ctex"
+uid="uid://seee2x3bmkh"
+path="res://.godot/imported/wired-lineal-1160-cat-head (1).png-cdd7f87d49b7ae0776d41b762302d6ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character/character 2.1.png"
-dest_files=["res://.godot/imported/character 2.1.png-15220423ffe3ab090b246352bf4b52f5.ctex"]
+source_file="res://assets/animals/wired-lineal-1160-cat-head (1).png"
+dest_files=["res://.godot/imported/wired-lineal-1160-cat-head (1).png-cdd7f87d49b7ae0776d41b762302d6ce.ctex"]
 
 [params]
 

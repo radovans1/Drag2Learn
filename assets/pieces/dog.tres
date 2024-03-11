@@ -8,4 +8,3 @@ script = ExtResource("1_s8mdw")
 key = "dog"
 label = "Dog"
 texture = ExtResource("2_l830o")
-is_target = false

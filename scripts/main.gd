@@ -18,18 +18,6 @@ var incorrectly_placed = 0
 
 var popup_panel_instance
 
-#Called for add points to score
-func add_score(points: int):
-	score+= points
-	update_score_display()
-	
-#Called when points are added to score 	
-func update_score_display():
-	if $Score/ScoreLabel:
-		$Score/ScoreLabel.text = "Score: %d" % score
-	else:
-		print("Label uzol nebol nájdený")
-
 
 @onready var source_slot:Slot = $UI/PieceSlot
 
@@ -65,6 +53,19 @@ func _on_slot_animal_dropped(is_correct: bool) -> void:
 		incorrectly_placed += 1
 	#source_slot.set_piece(null)
 	#new_animal()
+	
+#Called for add points to score
+func add_score(points: int):
+	score+= points
+	update_score_display()
+	
+#Called when points are added to score 	
+func update_score_display():
+	if $Score/ScoreLabel:
+		$Score/ScoreLabel.text = "Score: %d" % score
+	else:
+		print("Label uzol nebol nájdený")
+
 
 func show_game_results():
 	var correct = correctly_placed - incorrectly_placed

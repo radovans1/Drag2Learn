@@ -5,6 +5,7 @@
 [sub_resource type="SystemFont" id="SystemFont_ffbiv"]
 font_weight = 600
 font_stretch = 125
+subpixel_positioning = 0
 
 [node name="PopupPanel" type="Window"]
 transparent_bg = true
