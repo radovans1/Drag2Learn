@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://dqabaemjt44th"]
+[gd_scene load_steps=18 format=3 uid="uid://dqabaemjt44th"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_ayiyk"]
+[ext_resource type="Texture2D" uid="uid://prann86nymey" path="res://assets/background/clouds_background.webp" id="2_ck6ge"]
 [ext_resource type="PackedScene" uid="uid://yimgncj4bkku" path="res://scenes/slot.tscn" id="2_l7p26"]
 [ext_resource type="Resource" uid="uid://de7sl8br6yamp" path="res://assets/pieces/cow.tres" id="3_ebn1x"]
 [ext_resource type="Resource" uid="uid://dl11ufr2sbq3w" path="res://assets/pieces/dog.tres" id="4_on7p3"]
@@ -13,9 +14,25 @@
 [ext_resource type="Resource" uid="uid://b7ll3xnwycn8k" path="res://assets/pieces/horse.tres" id="11_hrrx8"]
 [ext_resource type="PackedScene" uid="uid://b1yn774ts8iud" path="res://scenes/score.tscn" id="12_p7xm5"]
 [ext_resource type="PackedScene" uid="uid://c8bxqw8o88jqj" path="res://scenes/popup.tscn" id="13_tjin3"]
+[ext_resource type="PackedScene" uid="uid://s4xejticmnyx" path="res://scenes/pause_menu.tscn" id="14_hfyfv"]
+[ext_resource type="Texture2D" uid="uid://bawbh53h0vu4e" path="res://assets/character/character vector 1.1.png" id="16_t5lxm"]
+[ext_resource type="Texture2D" uid="uid://b3lqn7oy1dyno" path="res://assets/character/character vector tongue.png" id="17_ancis"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_ayiyk")
+
+[node name="background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -47.0
+offset_top = -1.0
+offset_right = 1745.0
+offset_bottom = 1023.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_ck6ge")
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -26,6 +43,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(0.5, 0.5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
@@ -39,6 +57,8 @@ columns = 3
 
 [node name="slot" parent="UI/GridContainer" instance=ExtResource("2_l7p26")]
 layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
 piece = ExtResource("3_ebn1x")
 
 [node name="Label" parent="UI/GridContainer/slot" index="1"]
@@ -84,6 +104,9 @@ offset_right = 638.0
 offset_bottom = 603.0
 is_source = true
 
+[node name="TextureRect" parent="UI/PieceSlot" index="0"]
+size_flags_horizontal = 4
+
 [node name="Score" parent="." instance=ExtResource("12_p7xm5")]
 offset_right = 140.0
 
@@ -101,6 +124,28 @@ offset_bottom = 246.0
 
 [node name="PopupPanel" parent="." instance=ExtResource("13_tjin3")]
 visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("14_hfyfv")]
+
+[node name="CorrectMessageImage" type="TextureRect" parent="."]
+visible = false
+offset_left = 896.0
+offset_top = 95.0
+offset_right = 1328.0
+offset_bottom = 948.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_t5lxm")
+
+[node name="IncorrectMessageImage" type="TextureRect" parent="."]
+visible = false
+offset_left = 59.0
+offset_top = 102.0
+offset_right = 491.0
+offset_bottom = 955.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17_ancis")
 
 [connection signal="animal_dropped" from="UI/GridContainer/slot" to="." method="_on_slot_animal_dropped"]
 [connection signal="animal_dropped" from="UI/GridContainer/slot5" to="." method="_on_slot_animal_dropped"]

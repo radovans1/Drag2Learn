@@ -2,9 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/popup.gd" id="1_oms8u"]
 
-[sub_resource type="SystemFont" id="SystemFont_ffbiv"]
-font_weight = 600
-font_stretch = 125
+[sub_resource type="SystemFont" id="SystemFont_btsmy"]
+font_names = PackedStringArray("Arial Rounded MT")
 subpixel_positioning = 0
 
 [node name="PopupPanel" type="Window"]
@@ -21,13 +20,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
 alignment = 1
 
 [node name="Label" type="Label" parent="HBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.505882, 0.298039, 0.027451, 1)
+theme_override_colors/font_color = Color(0.239216, 0.615686, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = SubResource("SystemFont_ffbiv")
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = SubResource("SystemFont_btsmy")
 theme_override_font_sizes/font_size = 35
 text = "CONGRATULATIONS!"
 horizontal_alignment = 1

@@ -9,6 +9,7 @@ class_name Slot
 @onready var label:Label = $Label
 
 signal animal_dropped(is_correct)
+#signal animal_dropped(is_correct, message_texture)
 
 func _ready() -> void:
 	update_piece()
@@ -43,16 +44,32 @@ func _can_drop_data(_at_position, data):
 func _drop_data(_at_position, data):
 	var dropped_piece: Piece = data as Piece
 	
+	#if piece != null:
+		#if dropped_piece.key == piece.key:
+			#texture_rect.texture = dropped_piece.texture
+			#label.text = ""
+			#var correct_texture = preload("res://assets/character/character vector 1.1.png")
+			#emit_signal("animal_dropped", true, correct_texture)
+			#show_correct_message("Correct!", correct_texture)
+		#else:
+			#var incorrect_texture = preload("res://assets/character/character vector tongue.png")
+			#emit_signal("animal_dropped", false, incorrect_texture)
+			##flash_warning_color()
+			#show_warning_message("Wrong, Try again!", incorrect_texture)
+	
 	if piece != null:
 		if dropped_piece.key == piece.key:
 			texture_rect.texture = dropped_piece.texture
 			label.text = ""
+			#var correct_texture = preload("res://assets/character/character vector 1.1.png")
 			emit_signal("animal_dropped", true)
 			show_correct_message("Correct!")
 		else:
+			#var incorrect_texture = preload("res://assets/character/character vector tongue.png")
 			emit_signal("animal_dropped", false)
 			#flash_warning_color()
 			show_warning_message("Wrong, Try again!")
+	
 	
 func get_preview():
 	var preview_texture = TextureRect.new()
@@ -75,20 +92,31 @@ func get_preview():
 	return preview
 	
  #Called when piece is dropped on wrong place 
+#func show_warning_message(message: String, texture: Texture):
 func show_warning_message(message: String):
 	var warning_label = $"../../../WarningLabel"
+	#var message_image = $"../../../CorrectMessageImage"
 	warning_label.text = message
+	#message_image.texture = texture
 	warning_label.visible = true
+	#message_image.visible = true
 	await get_tree().create_timer(2.0).timeout
 	warning_label.visible = false
+	#message_image.visible = false
 
+#func show_correct_message(message: String, texture: Texture):
 func show_correct_message(message: String):
 	var correct_label = $"../../../CorrectLabel"
+	#var message_image = $"../../../IncorrectMessageImage"
 	correct_label.text = message
+	#message_image.texture = texture
 	correct_label.visible = true
+	#message_image.visible = true
 	await get_tree().create_timer(2.0).timeout
 	correct_label.visible = false
-	
+	#message_image.visible = false
+
+
 #func flash_warning_color():
 	#var initial_color = texture_rect.modulate  # Uložiť pôvodnú farbu
 	#texture_rect.modulate = Color.RED  # Zmeniť farbu na červenú

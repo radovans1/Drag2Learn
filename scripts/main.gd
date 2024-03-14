@@ -18,8 +18,8 @@ var incorrectly_placed = 0
 
 var popup_panel_instance
 
-
 @onready var source_slot:Slot = $UI/PieceSlot
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -33,8 +33,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-	
-	
+
+
 func new_animal():
 	if animals.is_empty():
 		show_game_results()
