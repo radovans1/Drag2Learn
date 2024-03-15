@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dqabaemjt44th"]
+[gd_scene load_steps=20 format=3 uid="uid://dqabaemjt44th"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_ayiyk"]
 [ext_resource type="Texture2D" uid="uid://prann86nymey" path="res://assets/background/clouds_background.webp" id="2_ck6ge"]
@@ -17,6 +17,12 @@
 [ext_resource type="PackedScene" uid="uid://s4xejticmnyx" path="res://scenes/pause_menu.tscn" id="14_hfyfv"]
 [ext_resource type="Texture2D" uid="uid://bawbh53h0vu4e" path="res://assets/character/character vector 1.1.png" id="16_t5lxm"]
 [ext_resource type="Texture2D" uid="uid://b3lqn7oy1dyno" path="res://assets/character/character vector tongue.png" id="17_ancis"]
+
+[sub_resource type="SystemFont" id="SystemFont_kkvqk"]
+font_names = PackedStringArray("Arial Rounded MT")
+
+[sub_resource type="SystemFont" id="SystemFont_ipt6v"]
+font_names = PackedStringArray("Arial Rounded MT")
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_ayiyk")
@@ -111,16 +117,27 @@ size_flags_horizontal = 4
 offset_right = 140.0
 
 [node name="WarningLabel" type="Label" parent="."]
-offset_left = 816.0
-offset_top = 223.0
-offset_right = 897.0
-offset_bottom = 246.0
+offset_left = 87.0
+offset_top = 300.0
+offset_right = 168.0
+offset_bottom = 342.0
+theme_override_colors/font_color = Color(0.945098, 0.862745, 0.176471, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_kkvqk")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
 
 [node name="CorrectLabel" type="Label" parent="."]
-offset_left = 816.0
-offset_top = 223.0
-offset_right = 897.0
-offset_bottom = 246.0
+offset_left = 871.0
+offset_top = 300.0
+offset_right = 952.0
+offset_bottom = 342.0
+theme_override_colors/font_color = Color(0.945098, 0.862745, 0.176471, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_ipt6v")
+theme_override_font_sizes/font_size = 30
 
 [node name="PopupPanel" parent="." instance=ExtResource("13_tjin3")]
 visible = false

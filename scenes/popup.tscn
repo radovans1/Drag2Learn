@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8bxqw8o88jqj"]
+[gd_scene load_steps=5 format=3 uid="uid://c8bxqw8o88jqj"]
 
 [ext_resource type="Script" path="res://scripts/popup.gd" id="1_oms8u"]
+[ext_resource type="Texture2D" uid="uid://bae1km6ujs2kh" path="res://assets/small_assets/arrow_right.png" id="2_abugq"]
+[ext_resource type="Texture2D" uid="uid://bnexl3ipqqhen" path="res://assets/small_assets/arrow_again.png" id="3_4f627"]
 
 [sub_resource type="SystemFont" id="SystemFont_btsmy"]
 font_names = PackedStringArray("Arial Rounded MT")
@@ -48,3 +50,34 @@ vertical_alignment = 1
 layout_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="NextLevelButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.955
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -92.0
+offset_right = -110.0
+offset_bottom = -70.0
+grow_horizontal = 0
+grow_vertical = 0
+icon = ExtResource("2_abugq")
+
+[node name="RepeatLevelButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.875
+anchor_top = 0.955
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -92.0
+offset_right = -260.0
+offset_bottom = -70.0
+grow_horizontal = 0
+grow_vertical = 0
+icon = ExtResource("3_4f627")
+
+[connection signal="pressed" from="NextLevelButton" to="." method="_on_next_level_button_pressed"]
+[connection signal="pressed" from="RepeatLevelButton" to="." method="_on_repeat_level_button_pressed"]

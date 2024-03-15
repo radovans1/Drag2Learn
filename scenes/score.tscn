@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1yn774ts8iud"]
+[gd_scene load_steps=3 format=3 uid="uid://b1yn774ts8iud"]
 
 [ext_resource type="Script" path="res://scripts/score.gd" id="1_lksy5"]
+
+[sub_resource type="SystemFont" id="SystemFont_u4ycv"]
+font_names = PackedStringArray("Arial Rounded MT")
 
 [node name="Score" type="Control"]
 layout_mode = 3
@@ -13,3 +16,5 @@ script = ExtResource("1_lksy5")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.945098, 0.862745, 0.176471, 1)
+theme_override_fonts/font = SubResource("SystemFont_u4ycv")

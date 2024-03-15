@@ -24,3 +24,11 @@ func show_results():
 func _on_close_requested():
 	hide()
 	get_tree().change_scene_to_file("res://scenes/mainpanel.tscn")
+
+
+func _on_next_level_button_pressed():
+	pass
+
+
+func _on_repeat_level_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/main.tscn")

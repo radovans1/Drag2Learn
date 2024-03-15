@@ -69,6 +69,7 @@ size_flags_vertical = 8
 
 [node name="newgame" type="Button" parent="background/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.945098, 0.862745, 0.176471, 1)
 theme_override_fonts/font = SubResource("SystemFont_dhns4")
 theme_override_font_sizes/font_size = 56
 text = "Start"
@@ -76,12 +77,14 @@ script = ExtResource("2_5wjgw")
 
 [node name="settings" type="Button" parent="background/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.945098, 0.862745, 0.176471, 1)
 theme_override_fonts/font = SubResource("SystemFont_1cahi")
 theme_override_font_sizes/font_size = 56
 text = "Settings"
 
 [node name="endgame" type="Button" parent="background/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.945098, 0.862745, 0.176471, 1)
 theme_override_fonts/font = SubResource("SystemFont_vni1f")
 theme_override_font_sizes/font_size = 56
 text = "End"
