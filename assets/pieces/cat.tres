@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://d3q0obhdv77qn"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://d3q0obhdv77qn"]
 
+[ext_resource type="AudioStream" uid="uid://dmwap3yhyabd1" path="res://assets/sounds/cat.mp3" id="1_iglnn"]
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_j4eaq"]
 [ext_resource type="Texture2D" uid="uid://cbclps3ghwthj" path="res://assets/animals/animals-vector-free-icon-set-25.png" id="2_01vxk"]
 
@@ -8,3 +9,4 @@ script = ExtResource("1_j4eaq")
 key = "cat"
 label = "Cat"
 texture = ExtResource("2_01vxk")
+sound = ExtResource("1_iglnn")

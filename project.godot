@@ -13,7 +13,7 @@ config_version=5
 config/name="inventory"
 run/main_scene="res://scenes/mainpanel.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://assets/character/character vector 1.1.png"
 
 [display]
 

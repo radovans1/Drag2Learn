@@ -7,6 +7,7 @@ class_name Slot
 
 @onready var texture_rect:TextureRect = $TextureRect
 @onready var label:Label = $Label
+@onready var sound_player = $SoundPlayer
 
 signal animal_dropped(is_correct)
 #signal animal_dropped(is_correct, message_texture)
@@ -62,6 +63,9 @@ func _drop_data(_at_position, data):
 			texture_rect.texture = dropped_piece.texture
 			label.text = ""
 			#var correct_texture = preload("res://assets/character/character vector 1.1.png")
+			if piece.sound:
+				sound_player.stream = piece.sound
+				sound_player.play()
 			emit_signal("animal_dropped", true)
 			show_correct_message("Correct!")
 		else:

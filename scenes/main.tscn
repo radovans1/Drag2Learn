@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dqabaemjt44th"]
+[gd_scene load_steps=24 format=3 uid="uid://dqabaemjt44th"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_ayiyk"]
 [ext_resource type="Texture2D" uid="uid://prann86nymey" path="res://assets/background/clouds_background.webp" id="2_ck6ge"]
@@ -17,6 +17,10 @@
 [ext_resource type="PackedScene" uid="uid://s4xejticmnyx" path="res://scenes/pause_menu.tscn" id="14_hfyfv"]
 [ext_resource type="Texture2D" uid="uid://bawbh53h0vu4e" path="res://assets/character/character vector 1.1.png" id="16_t5lxm"]
 [ext_resource type="Texture2D" uid="uid://b3lqn7oy1dyno" path="res://assets/character/character vector tongue.png" id="17_ancis"]
+[ext_resource type="AudioStream" uid="uid://cnso80rnhg51j" path="res://assets/music/kids-music-118820.mp3" id="18_6bwki"]
+[ext_resource type="Texture2D" uid="uid://36uc2mfruoxj" path="res://assets/small_assets/volume_yellow.png" id="19_1scn6"]
+[ext_resource type="Texture2D" uid="uid://nsv733ia4mij" path="res://assets/small_assets/mute_red.png" id="20_qlucw"]
+[ext_resource type="Script" path="res://scripts/MuteButton.gd" id="21_865te"]
 
 [sub_resource type="SystemFont" id="SystemFont_kkvqk"]
 font_names = PackedStringArray("Arial Rounded MT")
@@ -164,6 +168,21 @@ offset_bottom = 955.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17_ancis")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_6bwki")
+volume_db = -20.0
+autoplay = true
+
+[node name="MuteButton" type="TextureButton" parent="."]
+offset_left = 1083.0
+offset_top = 21.0
+offset_right = 1137.0
+offset_bottom = 61.0
+toggle_mode = true
+texture_normal = ExtResource("19_1scn6")
+texture_pressed = ExtResource("20_qlucw")
+script = ExtResource("21_865te")
+
 [connection signal="animal_dropped" from="UI/GridContainer/slot" to="." method="_on_slot_animal_dropped"]
 [connection signal="animal_dropped" from="UI/GridContainer/slot5" to="." method="_on_slot_animal_dropped"]
 [connection signal="animal_dropped" from="UI/GridContainer/slot6" to="." method="_on_slot_animal_dropped"]
@@ -175,6 +194,7 @@ texture = ExtResource("17_ancis")
 [connection signal="animal_dropped" from="UI/GridContainer/slot4" to="." method="_on_slot_animal_dropped"]
 [connection signal="animal_dropped" from="UI/PieceSlot" to="." method="_on_slot_animal_dropped"]
 [connection signal="close_requested" from="PopupPanel" to="PopupPanel" method="_on_close_requested"]
+[connection signal="pressed" from="MuteButton" to="MuteButton" method="_on_pressed"]
 
 [editable path="UI/GridContainer/slot"]
 [editable path="UI/PieceSlot"]

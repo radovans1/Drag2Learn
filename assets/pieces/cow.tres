@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://de7sl8br6yamp"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://de7sl8br6yamp"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_eqsm5"]
 [ext_resource type="Texture2D" uid="uid://ypaak7gyh7q1" path="res://assets/animals/animals-vector-free-icon-set-26.png" id="2_siu5w"]
+[ext_resource type="AudioStream" uid="uid://bg8mb6f153b5a" path="res://assets/sounds/cow.mp3" id="2_wuwel"]
 
 [resource]
 script = ExtResource("1_eqsm5")
 key = "cow"
 label = "Cow"
 texture = ExtResource("2_siu5w")
+sound = ExtResource("2_wuwel")

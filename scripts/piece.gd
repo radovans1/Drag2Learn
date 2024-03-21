@@ -5,3 +5,4 @@ class_name Piece
 @export var key: String
 @export var label: String
 @export var texture: Texture2D
+@export var sound: AudioStream
