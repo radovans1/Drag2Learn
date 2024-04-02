@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7h4iic4i2pts"]
+
+[ext_resource type="Script" path="res://scripts/level_button.gd" id="1_oslii"]
+[ext_resource type="FontFile" uid="uid://dg1l1e27qlhq7" path="res://assets/fonts/Madimi_One/MadimiOne-Regular.ttf" id="1_ov4pi"]
+[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="1_xu8y0"]
+
+[node name="LevelButton" type="Button"]
+custom_minimum_size = Vector2(150, 100)
+offset_right = 200.0
+offset_bottom = 150.0
+theme = ExtResource("1_xu8y0")
+theme_override_fonts/font = ExtResource("1_ov4pi")
+theme_override_font_sizes/font_size = 47
+text = "Level 1 "
+script = ExtResource("1_oslii")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -32,3 +32,6 @@ func _on_next_level_button_pressed():
 
 func _on_repeat_level_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/main.tscn")
+
+func _on_menu_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/select_level_scene.tscn")

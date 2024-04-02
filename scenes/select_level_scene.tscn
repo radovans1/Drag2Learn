@@ -1,0 +1,113 @@
+[gd_scene load_steps=9 format=3 uid="uid://b1duc1g32mvhc"]
+
+[ext_resource type="FontFile" uid="uid://dg1l1e27qlhq7" path="res://assets/fonts/Madimi_One/MadimiOne-Regular.ttf" id="1_fyd3q"]
+[ext_resource type="Texture2D" uid="uid://b7bmjnpp4nl64" path="res://assets/background/level_background/66px_5zu1_230310.jpg" id="1_wcrie"]
+[ext_resource type="PackedScene" uid="uid://c7h4iic4i2pts" path="res://scenes/level_button.tscn" id="3_0a0xj"]
+[ext_resource type="Texture2D" uid="uid://mnr82hjqj51v" path="res://assets/small_assets/arrow_left.png" id="3_1weev"]
+[ext_resource type="Script" path="res://scripts/BackButton.gd" id="3_3ya1u"]
+[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="4_dkdec"]
+[ext_resource type="Texture2D" uid="uid://bawbh53h0vu4e" path="res://assets/character/character vector 1.1.png" id="5_diib7"]
+[ext_resource type="AudioStream" uid="uid://b1omv40161ype" path="res://assets/sounds/introduction.mp3" id="6_krrmd"]
+
+[node name="SelectLevelScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -448.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.513726, 0.482353, 1)
+
+[node name="66Px5Zu1230310" type="Sprite2D" parent="."]
+position = Vector2(622, 351)
+scale = Vector2(0.2, 0.206573)
+texture = ExtResource("1_wcrie")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 129.0
+offset_right = 766.0
+offset_bottom = 261.0
+theme_override_fonts/font = ExtResource("1_fyd3q")
+theme_override_font_sizes/font_size = 100
+text = "Select Level"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -19.0
+offset_right = 176.0
+offset_bottom = 197.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="Level1" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "Animals"
+level_path = "res://scenes/main.tscn"
+
+[node name="Level2" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "Food"
+level_path = "res://scenes/main.tscn"
+
+[node name="Level3" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "Fruit"
+level_path = "res://scenes/main.tscn"
+
+[node name="Level4" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "Vegetables"
+level_path = "res://scenes/main.tscn"
+
+[node name="Level5" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "Body"
+level_path = "res://scenes/main.tscn"
+
+[node name="Level6" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "Colors"
+level_path = "res://scenes/main.tscn"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 18.0
+offset_right = 121.0
+offset_bottom = 68.0
+theme = ExtResource("4_dkdec")
+text = "Back"
+icon = ExtResource("3_1weev")
+script = ExtResource("3_3ya1u")
+
+[node name="CharacterVector1_1" type="Sprite2D" parent="."]
+position = Vector2(959, 310)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_diib7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_krrmd")
+autoplay = true
+
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]

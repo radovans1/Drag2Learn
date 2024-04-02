@@ -1,12 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8bxqw8o88jqj"]
+[gd_scene load_steps=6 format=3 uid="uid://c8bxqw8o88jqj"]
 
 [ext_resource type="Script" path="res://scripts/popup.gd" id="1_oms8u"]
+[ext_resource type="FontFile" uid="uid://dg1l1e27qlhq7" path="res://assets/fonts/Madimi_One/MadimiOne-Regular.ttf" id="2_8fjsd"]
 [ext_resource type="Texture2D" uid="uid://bae1km6ujs2kh" path="res://assets/small_assets/arrow_right.png" id="2_abugq"]
 [ext_resource type="Texture2D" uid="uid://bnexl3ipqqhen" path="res://assets/small_assets/arrow_again.png" id="3_4f627"]
-
-[sub_resource type="SystemFont" id="SystemFont_btsmy"]
-font_names = PackedStringArray("Arial Rounded MT")
-subpixel_positioning = 0
+[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="4_l4324"]
 
 [node name="PopupPanel" type="Window"]
 transparent_bg = true
@@ -32,9 +30,9 @@ theme_override_colors/font_color = Color(0.239216, 0.615686, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 15
-theme_override_fonts/font = SubResource("SystemFont_btsmy")
-theme_override_font_sizes/font_size = 35
-text = "CONGRATULATIONS!"
+theme_override_fonts/font = ExtResource("2_8fjsd")
+theme_override_font_sizes/font_size = 43
+text = "Level Completed"
 horizontal_alignment = 1
 
 [node name="CorrectCountLabel" type="Label" parent="HBoxContainer"]
@@ -64,6 +62,23 @@ offset_bottom = -70.0
 grow_horizontal = 0
 grow_vertical = 0
 icon = ExtResource("2_abugq")
+flat = true
+
+[node name="MenuButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.61
+anchor_top = 0.955
+anchor_right = 0.89
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -92.0
+offset_right = -110.0
+offset_bottom = -70.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("4_l4324")
+theme_override_font_sizes/font_size = 26
+text = "Menu"
 
 [node name="RepeatLevelButton" type="Button" parent="."]
 anchors_preset = -1
@@ -78,6 +93,9 @@ offset_bottom = -70.0
 grow_horizontal = 0
 grow_vertical = 0
 icon = ExtResource("3_4f627")
+flat = true
 
 [connection signal="pressed" from="NextLevelButton" to="." method="_on_next_level_button_pressed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_next_level_button_pressed"]
 [connection signal="pressed" from="RepeatLevelButton" to="." method="_on_repeat_level_button_pressed"]

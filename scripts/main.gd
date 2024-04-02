@@ -27,7 +27,7 @@ func _ready() -> void:
 	new_animal()
 	source_slot.connect("animal_dropped", Callable(self, "_on_slot_animal_dropped"))
 	update_score_display()
-	popup_panel_instance = $PopupPanel
+	popup_panel_instance = $PopupPanel 
 	popup_panel_instance.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

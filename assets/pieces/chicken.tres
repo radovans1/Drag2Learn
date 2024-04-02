@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://c8dy6xd8iwxex"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_3qh1s"]
-[ext_resource type="Texture2D" uid="uid://hgwdxhs8p6ev" path="res://assets/animals/animals-vector-free-icon-set-37.png" id="2_q78a6"]
-[ext_resource type="AudioStream" uid="uid://cmaytaieyr20q" path="res://assets/sounds/chicken.mp3" id="2_t0y2j"]
+[ext_resource type="Texture2D" uid="uid://hgwdxhs8p6ev" path="res://assets/level graphics/animals/animals-vector-free-icon-set-37.png" id="2_q78a6"]
+[ext_resource type="AudioStream" uid="uid://cmaytaieyr20q" path="res://assets/sounds/animals/chicken.mp3" id="2_t0y2j"]
 
 [resource]
 script = ExtResource("1_3qh1s")
