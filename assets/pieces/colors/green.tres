@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://co4weo6t5b5io"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_k06p8"]
+[ext_resource type="Texture2D" uid="uid://ksqx84sarl1w" path="res://assets/level graphics/colours/green.png" id="2_nm8h3"]
+
+[resource]
+script = ExtResource("1_k06p8")
+key = "green"
+label = "Green"
+texture = ExtResource("2_nm8h3")

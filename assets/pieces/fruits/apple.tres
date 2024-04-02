@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://7qba322mmgrs"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_q3i0q"]
+[ext_resource type="Texture2D" uid="uid://cr5p6c76x5aaf" path="res://assets/level graphics/fruits/apple.png" id="2_1sq4w"]
+
+[resource]
+script = ExtResource("1_q3i0q")
+key = "apple"
+label = "Apple"
+texture = ExtResource("2_1sq4w")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://dtd55bau4ycal"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_qkmjn"]
+[ext_resource type="Texture2D" uid="uid://dtbbjyexmmerm" path="res://assets/level graphics/fruits/blueberries.png" id="2_ibsxj"]
+
+[resource]
+script = ExtResource("1_qkmjn")
+key = "blueberries"
+label = "Blueberries"
+texture = ExtResource("2_ibsxj")

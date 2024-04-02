@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://ct4v5gmop1o5m"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_56010"]
+[ext_resource type="Texture2D" uid="uid://ci0mt2logf02x" path="res://assets/level graphics/fruits/strawberry.png" id="2_xt0iq"]
+
+[resource]
+script = ExtResource("1_56010")
+key = "strawberry"
+label = "Strawberry"
+texture = ExtResource("2_xt0iq")

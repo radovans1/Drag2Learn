@@ -29,16 +29,16 @@ grow_vertical = 2
 color = Color(1, 0.513726, 0.482353, 1)
 
 [node name="66Px5Zu1230310" type="Sprite2D" parent="."]
-position = Vector2(622, 351)
+position = Vector2(581, 327)
 scale = Vector2(0.2, 0.206573)
 texture = ExtResource("1_wcrie")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 255.0
-offset_top = 129.0
-offset_right = 766.0
-offset_bottom = 261.0
+offset_left = 206.0
+offset_top = 93.0
+offset_right = 717.0
+offset_bottom = 225.0
 theme_override_fonts/font = ExtResource("1_fyd3q")
 theme_override_font_sizes/font_size = 100
 text = "Select Level"
@@ -50,10 +50,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -306.0
-offset_top = -19.0
-offset_right = 176.0
-offset_bottom = 197.0
+offset_left = -406.0
+offset_top = -85.0
+offset_right = 171.0
+offset_bottom = 247.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 16
@@ -73,7 +73,7 @@ level_path = "res://scenes/main.tscn"
 [node name="Level3" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
 text = "Fruit"
-level_path = "res://scenes/main.tscn"
+level_path = "res://scenes/level_fruit.tscn"
 
 [node name="Level4" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
@@ -88,7 +88,22 @@ level_path = "res://scenes/main.tscn"
 [node name="Level6" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
 text = "Colors"
-level_path = "res://scenes/main.tscn"
+level_path = "res://scenes/level_colors.tscn"
+
+[node name="Level7" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "..."
+level_path = "res://scenes/level_colors.tscn"
+
+[node name="Level8" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "..."
+level_path = "res://scenes/level_colors.tscn"
+
+[node name="Level9" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+text = "..."
+level_path = "res://scenes/level_colors.tscn"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0

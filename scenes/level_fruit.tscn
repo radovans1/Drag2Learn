@@ -1,0 +1,49 @@
+[gd_scene load_steps=12 format=3 uid="uid://dkk4n0wd73j7g"]
+
+[ext_resource type="PackedScene" uid="uid://dqabaemjt44th" path="res://scenes/main.tscn" id="1_7aqis"]
+[ext_resource type="Resource" uid="uid://7qba322mmgrs" path="res://assets/pieces/fruits/apple.tres" id="2_k868q"]
+[ext_resource type="Script" path="res://scripts/level_fruit.gd" id="2_t7j7u"]
+[ext_resource type="Resource" uid="uid://dyjvedoey2bc2" path="res://assets/pieces/fruits/banana.tres" id="3_14k4f"]
+[ext_resource type="Resource" uid="uid://dtd55bau4ycal" path="res://assets/pieces/fruits/blueberries.tres" id="4_hlejw"]
+[ext_resource type="Resource" uid="uid://j68g3p15hogp" path="res://assets/pieces/fruits/cherry.tres" id="5_eykfw"]
+[ext_resource type="Resource" uid="uid://bvqa40lr5sixa" path="res://assets/pieces/fruits/grape.tres" id="6_7dccr"]
+[ext_resource type="Resource" uid="uid://8xjiqnd0p4ft" path="res://assets/pieces/fruits/lemon.tres" id="7_82jo0"]
+[ext_resource type="Resource" uid="uid://ddd4yo3ve4tof" path="res://assets/pieces/fruits/orange.tres" id="8_reab3"]
+[ext_resource type="Resource" uid="uid://ua03g5172ss6" path="res://assets/pieces/fruits/raspberry.tres" id="9_dnsy1"]
+[ext_resource type="Resource" uid="uid://ct4v5gmop1o5m" path="res://assets/pieces/fruits/strawberry.tres" id="10_kapbs"]
+
+[node name="level_fruit" instance=ExtResource("1_7aqis")]
+script = ExtResource("2_t7j7u")
+
+[node name="slot" parent="UI/GridContainer" index="0"]
+piece = ExtResource("2_k868q")
+
+[node name="Label" parent="UI/GridContainer/slot" index="1"]
+text = "Apple"
+
+[node name="slot5" parent="UI/GridContainer" index="1"]
+piece = ExtResource("3_14k4f")
+
+[node name="slot6" parent="UI/GridContainer" index="2"]
+piece = ExtResource("4_hlejw")
+
+[node name="slot7" parent="UI/GridContainer" index="3"]
+piece = ExtResource("5_eykfw")
+
+[node name="slot8" parent="UI/GridContainer" index="4"]
+piece = ExtResource("6_7dccr")
+
+[node name="slot9" parent="UI/GridContainer" index="5"]
+piece = ExtResource("7_82jo0")
+
+[node name="slot2" parent="UI/GridContainer" index="6"]
+piece = ExtResource("8_reab3")
+
+[node name="slot3" parent="UI/GridContainer" index="7"]
+piece = ExtResource("9_dnsy1")
+
+[node name="slot4" parent="UI/GridContainer" index="8"]
+piece = ExtResource("10_kapbs")
+
+[editable path="UI/GridContainer/slot"]
+[editable path="UI/PieceSlot"]
