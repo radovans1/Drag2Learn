@@ -29,7 +29,7 @@ grow_vertical = 2
 color = Color(1, 0.513726, 0.482353, 1)
 
 [node name="66Px5Zu1230310" type="Sprite2D" parent="."]
-position = Vector2(581, 327)
+position = Vector2(520, 320)
 scale = Vector2(0.2, 0.206573)
 texture = ExtResource("1_wcrie")
 
@@ -92,25 +92,25 @@ level_path = "res://scenes/level_colors.tscn"
 
 [node name="Level7" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "..."
+text = "Vehicles"
 level_path = "res://scenes/level_colors.tscn"
 
 [node name="Level8" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "..."
-level_path = "res://scenes/level_colors.tscn"
+text = "Clothes"
+level_path = "res://scenes/level_clothes.tscn"
 
 [node name="Level9" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "..."
-level_path = "res://scenes/level_colors.tscn"
+text = "Numbers"
+level_path = "res://scenes/level_numbers.tscn"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 21.0
-offset_top = 18.0
-offset_right = 121.0
-offset_bottom = 68.0
+offset_left = 27.0
+offset_top = 36.0
+offset_right = 113.0
+offset_bottom = 78.0
 theme = ExtResource("4_dkdec")
 text = "Back"
 icon = ExtResource("3_1weev")
@@ -124,5 +124,10 @@ texture = ExtResource("5_diib7")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_krrmd")
 autoplay = true
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
 
 [connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://bfe48skq12v36"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_k4h4h"]
+[ext_resource type="AudioStream" uid="uid://drxac8y0r5jf2" path="res://assets/sounds/numbers/eight.mp3" id="2_cce7g"]
+[ext_resource type="Texture2D" uid="uid://d0pgxvgmvvxqi" path="res://assets/level graphics/numbers/eight.png" id="2_k8ngj"]
+
+[resource]
+script = ExtResource("1_k4h4h")
+key = "eight"
+label = "Eight"
+texture = ExtResource("2_k8ngj")
+sound = ExtResource("2_cce7g")

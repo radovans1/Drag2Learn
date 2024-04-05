@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://bam76q6h38gt7"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://bam76q6h38gt7"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_bjaq3"]
 [ext_resource type="Texture2D" uid="uid://dkpcp6f1ulro" path="res://assets/level graphics/colours/pink.png" id="2_0gmfl"]
+[ext_resource type="AudioStream" uid="uid://8b2312wrwejk" path="res://assets/sounds/colours/pink.mp3" id="2_mvycv"]
 
 [resource]
 script = ExtResource("1_bjaq3")
 key = "pink"
 label = "Pink"
 texture = ExtResource("2_0gmfl")
+sound = ExtResource("2_mvycv")

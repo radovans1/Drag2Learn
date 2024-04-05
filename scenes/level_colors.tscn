@@ -45,5 +45,11 @@ piece = ExtResource("10_gbma6")
 [node name="slot4" parent="UI/GridContainer" index="8"]
 piece = ExtResource("11_p114w")
 
+[node name="BackButton" parent="UI" index="2"]
+offset_left = 21.0
+offset_top = 32.0
+offset_right = 107.0
+offset_bottom = 74.0
+
 [editable path="UI/GridContainer/slot"]
 [editable path="UI/PieceSlot"]

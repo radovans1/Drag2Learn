@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://cnlequtsswsve"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://cnlequtsswsve"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_d0pj7"]
+[ext_resource type="AudioStream" uid="uid://kwt0umwc7113" path="res://assets/sounds/colours/black.mp3" id="2_gwxlr"]
 [ext_resource type="Texture2D" uid="uid://c2r5ss0ufnqr" path="res://assets/level graphics/colours/black.png" id="2_mwesk"]
 
 [resource]
@@ -8,3 +9,4 @@ script = ExtResource("1_d0pj7")
 key = "black"
 label = "Black"
 texture = ExtResource("2_mwesk")
+sound = ExtResource("2_gwxlr")

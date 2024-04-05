@@ -1,0 +1,49 @@
+[gd_scene load_steps=12 format=3 uid="uid://dug4aqf01b2l6"]
+
+[ext_resource type="PackedScene" uid="uid://dqabaemjt44th" path="res://scenes/main.tscn" id="1_5fx4v"]
+[ext_resource type="Script" path="res://scripts/level_clothes.gd" id="2_b84jx"]
+[ext_resource type="Resource" uid="uid://bm25hbpqw848y" path="res://assets/pieces/clothes/dress.tres" id="3_w4gv3"]
+[ext_resource type="Resource" uid="uid://5dux03qkw0h0" path="res://assets/pieces/clothes/hat.tres" id="4_maowe"]
+[ext_resource type="Resource" uid="uid://bf1oqnxcmkatd" path="res://assets/pieces/clothes/jacket.tres" id="5_akx05"]
+[ext_resource type="Resource" uid="uid://06c4ag73cv61" path="res://assets/pieces/clothes/shoes.tres" id="6_m5n75"]
+[ext_resource type="Resource" uid="uid://dq85hn31lugs4" path="res://assets/pieces/clothes/skirt.tres" id="7_bswa6"]
+[ext_resource type="Resource" uid="uid://vg3srd1gsp3r" path="res://assets/pieces/clothes/socks.tres" id="8_5i8hl"]
+[ext_resource type="Resource" uid="uid://bb2t3a2liv627" path="res://assets/pieces/clothes/sweater.tres" id="9_o3k6t"]
+[ext_resource type="Resource" uid="uid://djw12w4t5auav" path="res://assets/pieces/clothes/tshirt.tres" id="10_400b6"]
+[ext_resource type="Resource" uid="uid://b6bbkjffupc3e" path="res://assets/pieces/clothes/trousers.tres" id="11_ndypb"]
+
+[node name="level_clothes" instance=ExtResource("1_5fx4v")]
+script = ExtResource("2_b84jx")
+
+[node name="slot" parent="UI/GridContainer" index="0"]
+piece = ExtResource("3_w4gv3")
+
+[node name="Label" parent="UI/GridContainer/slot" index="1"]
+text = "Dress"
+
+[node name="slot5" parent="UI/GridContainer" index="1"]
+piece = ExtResource("4_maowe")
+
+[node name="slot6" parent="UI/GridContainer" index="2"]
+piece = ExtResource("5_akx05")
+
+[node name="slot7" parent="UI/GridContainer" index="3"]
+piece = ExtResource("6_m5n75")
+
+[node name="slot8" parent="UI/GridContainer" index="4"]
+piece = ExtResource("10_400b6")
+
+[node name="slot9" parent="UI/GridContainer" index="5"]
+piece = ExtResource("8_5i8hl")
+
+[node name="slot2" parent="UI/GridContainer" index="6"]
+piece = ExtResource("9_o3k6t")
+
+[node name="slot3" parent="UI/GridContainer" index="7"]
+piece = ExtResource("11_ndypb")
+
+[node name="slot4" parent="UI/GridContainer" index="8"]
+piece = ExtResource("7_bswa6")
+
+[editable path="UI/GridContainer/slot"]
+[editable path="UI/PieceSlot"]

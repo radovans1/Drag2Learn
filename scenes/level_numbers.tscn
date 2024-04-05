@@ -1,0 +1,49 @@
+[gd_scene load_steps=12 format=3 uid="uid://b4yk11uh20wd0"]
+
+[ext_resource type="PackedScene" uid="uid://dqabaemjt44th" path="res://scenes/main.tscn" id="1_oudnn"]
+[ext_resource type="Script" path="res://scripts/level_numbers.gd" id="2_k0co1"]
+[ext_resource type="Resource" uid="uid://baooo2aylyowy" path="res://assets/pieces/numbers/one.tres" id="3_t6pr7"]
+[ext_resource type="Resource" uid="uid://dwde2y43hm4xf" path="res://assets/pieces/numbers/two.tres" id="4_bdb5a"]
+[ext_resource type="Resource" uid="uid://b372wrivruqmq" path="res://assets/pieces/numbers/three.tres" id="5_forsh"]
+[ext_resource type="Resource" uid="uid://dqavs0jcg3n3c" path="res://assets/pieces/numbers/four.tres" id="6_opdk4"]
+[ext_resource type="Resource" uid="uid://dsqfnhmmmqm48" path="res://assets/pieces/numbers/five.tres" id="7_r7qfg"]
+[ext_resource type="Resource" uid="uid://cc824y8uuiv1c" path="res://assets/pieces/numbers/six.tres" id="8_j6y3o"]
+[ext_resource type="Resource" uid="uid://7m4lj1exexf6" path="res://assets/pieces/numbers/seven.tres" id="9_5rd13"]
+[ext_resource type="Resource" uid="uid://bfe48skq12v36" path="res://assets/pieces/numbers/eight.tres" id="10_daiob"]
+[ext_resource type="Resource" uid="uid://bw4elhlh3d5np" path="res://assets/pieces/numbers/nine.tres" id="11_5u6yy"]
+
+[node name="level_numbers" instance=ExtResource("1_oudnn")]
+script = ExtResource("2_k0co1")
+
+[node name="slot" parent="UI/GridContainer" index="0"]
+piece = ExtResource("3_t6pr7")
+
+[node name="Label" parent="UI/GridContainer/slot" index="1"]
+text = ""
+
+[node name="slot5" parent="UI/GridContainer" index="1"]
+piece = ExtResource("4_bdb5a")
+
+[node name="slot6" parent="UI/GridContainer" index="2"]
+piece = ExtResource("5_forsh")
+
+[node name="slot7" parent="UI/GridContainer" index="3"]
+piece = ExtResource("6_opdk4")
+
+[node name="slot8" parent="UI/GridContainer" index="4"]
+piece = ExtResource("7_r7qfg")
+
+[node name="slot9" parent="UI/GridContainer" index="5"]
+piece = ExtResource("8_j6y3o")
+
+[node name="slot2" parent="UI/GridContainer" index="6"]
+piece = ExtResource("9_5rd13")
+
+[node name="slot3" parent="UI/GridContainer" index="7"]
+piece = ExtResource("10_daiob")
+
+[node name="slot4" parent="UI/GridContainer" index="8"]
+piece = ExtResource("11_5u6yy")
+
+[editable path="UI/GridContainer/slot"]
+[editable path="UI/PieceSlot"]

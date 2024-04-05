@@ -5,9 +5,8 @@ extends Button
 #var original_size = scale
 #var grow_size = Vector2(1.1, 1.1)
 #
-#func _on_mouse_entered():
-	#grow_btn(grow_size, .1)
-	#
+func _on_mouse_entered():
+	$Hitsound.play()
 #
 #func _on_mouse_exited():
 	#grow_btn(original_size, .1)

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c7h4iic4i2pts"]
+[gd_scene load_steps=5 format=3 uid="uid://c7h4iic4i2pts"]
 
 [ext_resource type="Script" path="res://scripts/level_button.gd" id="1_oslii"]
 [ext_resource type="FontFile" uid="uid://dg1l1e27qlhq7" path="res://assets/fonts/Madimi_One/MadimiOne-Regular.ttf" id="1_ov4pi"]
 [ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="1_xu8y0"]
+[ext_resource type="AudioStream" uid="uid://crhk7d68tcwad" path="res://assets/sounds/bloop_buttton_sound.mp3" id="4_ebgxj"]
 
 [node name="LevelButton" type="Button"]
 custom_minimum_size = Vector2(150, 100)
@@ -13,6 +14,10 @@ theme_override_fonts/font = ExtResource("1_ov4pi")
 theme_override_font_sizes/font_size = 47
 text = "Level 1 "
 script = ExtResource("1_oslii")
+
+[node name="Hitsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ebgxj")
+volume_db = -11.837
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

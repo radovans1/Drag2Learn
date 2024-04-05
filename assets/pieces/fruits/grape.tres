@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://bvqa40lr5sixa"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://bvqa40lr5sixa"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_kgxs3"]
+[ext_resource type="AudioStream" uid="uid://hbcwi4xmf2r0" path="res://assets/sounds/fruits/grape.mp3" id="2_7ilt6"]
 [ext_resource type="Texture2D" uid="uid://bm4dd67kf7wsu" path="res://assets/level graphics/fruits/grape.png" id="2_t4ca4"]
 
 [resource]
@@ -8,3 +9,4 @@ script = ExtResource("1_kgxs3")
 key = "grape"
 label = "Grape"
 texture = ExtResource("2_t4ca4")
+sound = ExtResource("2_7ilt6")

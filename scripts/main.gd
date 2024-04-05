@@ -1,15 +1,15 @@
 extends Node2D
 
 var animals = [
-	preload("res://assets/pieces/cow.tres"),
-	preload("res://assets/pieces/dog.tres"),
-	preload("res://assets/pieces/sheep.tres"),
-	preload("res://assets/pieces/cat.tres"),
-	preload("res://assets/pieces/chicken.tres"),
-	preload("res://assets/pieces/rabbit.tres"),
-	preload("res://assets/pieces/pig.tres"),
-	preload("res://assets/pieces/horse.tres"),
-	preload("res://assets/pieces/mouse.tres")
+	preload("res://assets/pieces/animals/cow.tres"),
+	preload("res://assets/pieces/animals/dog.tres"),
+	preload("res://assets/pieces/animals/sheep.tres"),
+	preload("res://assets/pieces/animals/cat.tres"),
+	preload("res://assets/pieces/animals/chicken.tres"),
+	preload("res://assets/pieces/animals/rabbit.tres"),
+	preload("res://assets/pieces/animals/pig.tres"),
+	preload("res://assets/pieces/animals/horse.tres"),
+	preload("res://assets/pieces/animals/mouse.tres")
 ]
 
 var score = 0

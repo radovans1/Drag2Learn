@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://j68g3p15hogp"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://j68g3p15hogp"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_vte2b"]
+[ext_resource type="AudioStream" uid="uid://dgcj8nmf2ww83" path="res://assets/sounds/fruits/cherry.mp3" id="2_612j6"]
 [ext_resource type="Texture2D" uid="uid://biedb8v3bvxaw" path="res://assets/level graphics/fruits/cherry.png" id="2_wet3p"]
 
 [resource]
@@ -8,3 +9,4 @@ script = ExtResource("1_vte2b")
 key = "cherry"
 label = "Cherry"
 texture = ExtResource("2_wet3p")
+sound = ExtResource("2_612j6")

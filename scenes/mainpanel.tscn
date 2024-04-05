@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://bcow1lwadwcvy"]
+[gd_scene load_steps=9 format=3 uid="uid://bcow1lwadwcvy"]
 
 [ext_resource type="Texture2D" uid="uid://dhpwgtc4kmhhd" path="res://assets/background/london.webp" id="1_6xhkt"]
-[ext_resource type="Script" path="res://scripts/newgame.gd" id="2_5wjgw"]
 [ext_resource type="Texture2D" uid="uid://c5blytborsmp7" path="res://assets/logo/logo.png" id="2_ql47x"]
-[ext_resource type="Script" path="res://scripts/endgame.gd" id="3_5b6rw"]
-[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="3_r78dg"]
 [ext_resource type="Texture2D" uid="uid://bawbh53h0vu4e" path="res://assets/character/character vector 1.1.png" id="4_1u3ff"]
 [ext_resource type="Texture2D" uid="uid://b3lqn7oy1dyno" path="res://assets/character/character vector tongue.png" id="5_2ei5v"]
+[ext_resource type="PackedScene" uid="uid://c7h4iic4i2pts" path="res://scenes/level_button.tscn" id="6_h7klh"]
+[ext_resource type="Script" path="res://scripts/NewGameButton.gd" id="7_dc5j5"]
+[ext_resource type="Script" path="res://scripts/SettingsButton.gd" id="8_06cot"]
+[ext_resource type="Script" path="res://scripts/EndButton.gd" id="9_adnkc"]
 
 [node name="Mainpanel" type="Control"]
 layout_mode = 3
@@ -59,37 +60,33 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 
-[node name="newgame" type="Button" parent="background/VBoxContainer/VBoxContainer"]
+[node name="NewGameButton" parent="background/VBoxContainer/VBoxContainer" instance=ExtResource("6_h7klh")]
 layout_mode = 2
-theme = ExtResource("3_r78dg")
 theme_override_font_sizes/font_size = 60
 text = "Start"
-script = ExtResource("2_5wjgw")
+script = ExtResource("7_dc5j5")
+level_path = "res://scenes/select_level_scene.tscn"
 
-[node name="settings" type="Button" parent="background/VBoxContainer/VBoxContainer"]
+[node name="SettingsButton" parent="background/VBoxContainer/VBoxContainer" instance=ExtResource("6_h7klh")]
 layout_mode = 2
-theme = ExtResource("3_r78dg")
 theme_override_font_sizes/font_size = 60
 text = "Settings"
+script = ExtResource("8_06cot")
 
-[node name="endgame" type="Button" parent="background/VBoxContainer/VBoxContainer"]
+[node name="EndButton" parent="background/VBoxContainer/VBoxContainer" instance=ExtResource("6_h7klh")]
 layout_mode = 2
-theme = ExtResource("3_r78dg")
 theme_override_font_sizes/font_size = 60
 text = "End"
-script = ExtResource("3_5b6rw")
+script = ExtResource("9_adnkc")
 
 [node name="CharacterVector1_1" type="Sprite2D" parent="background/VBoxContainer"]
-position = Vector2(1187.93, 43.9286)
+position = Vector2(1147.93, 64.7857)
 rotation = -0.71733
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("4_1u3ff")
 
 [node name="CharacterVectorTongue" type="Sprite2D" parent="background/VBoxContainer"]
-position = Vector2(-247.786, 64.2857)
+position = Vector2(-209.214, 94.7858)
 rotation = 0.715585
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("5_2ei5v")
-
-[connection signal="pressed" from="background/VBoxContainer/VBoxContainer/newgame" to="background/VBoxContainer/VBoxContainer/newgame" method="_on_pressed"]
-[connection signal="pressed" from="background/VBoxContainer/VBoxContainer/endgame" to="background/VBoxContainer/VBoxContainer/endgame" method="_on_pressed"]
