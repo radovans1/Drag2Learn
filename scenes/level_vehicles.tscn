@@ -1,0 +1,46 @@
+[gd_scene load_steps=12 format=3 uid="uid://b0ht7pt458sp5"]
+
+[ext_resource type="PackedScene" uid="uid://dqabaemjt44th" path="res://scenes/main.tscn" id="1_k44eu"]
+[ext_resource type="Script" path="res://scripts/level_vehicles.gd" id="2_8kc48"]
+[ext_resource type="Resource" uid="uid://ijgycvsr48rf" path="res://assets/pieces/vehicles/airplane.tres" id="3_jnvt2"]
+[ext_resource type="Resource" uid="uid://b4fuy43o6lama" path="res://assets/pieces/vehicles/bicycle.tres" id="4_bk8rm"]
+[ext_resource type="Resource" uid="uid://djfvl3e2orjix" path="res://assets/pieces/vehicles/bus.tres" id="5_x51uk"]
+[ext_resource type="Resource" uid="uid://dlawq7qoa0jai" path="res://assets/pieces/vehicles/car.tres" id="6_0ub57"]
+[ext_resource type="Resource" uid="uid://c64r25626c2uj" path="res://assets/pieces/vehicles/helicopter.tres" id="7_3lh5e"]
+[ext_resource type="Resource" uid="uid://d2i865mv55xkd" path="res://assets/pieces/vehicles/motorcycle.tres" id="8_ntlaq"]
+[ext_resource type="Resource" uid="uid://b3e066b41bdq1" path="res://assets/pieces/vehicles/ship.tres" id="9_3tw7x"]
+[ext_resource type="Resource" uid="uid://elcha04rlqa2" path="res://assets/pieces/vehicles/train.tres" id="10_khqlq"]
+[ext_resource type="Resource" uid="uid://dh33q7sx8xly3" path="res://assets/pieces/vehicles/truck.tres" id="11_j0a47"]
+
+[node name="level_vehicles" instance=ExtResource("1_k44eu")]
+script = ExtResource("2_8kc48")
+
+[node name="slot" parent="UI/GridContainer" index="0"]
+piece = ExtResource("3_jnvt2")
+
+[node name="slot5" parent="UI/GridContainer" index="1"]
+piece = ExtResource("4_bk8rm")
+
+[node name="slot6" parent="UI/GridContainer" index="2"]
+piece = ExtResource("5_x51uk")
+
+[node name="slot7" parent="UI/GridContainer" index="3"]
+piece = ExtResource("6_0ub57")
+
+[node name="slot8" parent="UI/GridContainer" index="4"]
+piece = ExtResource("7_3lh5e")
+
+[node name="slot9" parent="UI/GridContainer" index="5"]
+piece = ExtResource("8_ntlaq")
+
+[node name="slot2" parent="UI/GridContainer" index="6"]
+piece = ExtResource("9_3tw7x")
+
+[node name="slot3" parent="UI/GridContainer" index="7"]
+piece = ExtResource("10_khqlq")
+
+[node name="slot4" parent="UI/GridContainer" index="8"]
+piece = ExtResource("11_j0a47")
+
+[editable path="UI/GridContainer/slot"]
+[editable path="UI/PieceSlot"]

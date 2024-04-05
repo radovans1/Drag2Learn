@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://dlawq7qoa0jai"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_xlykm"]
+[ext_resource type="Texture2D" uid="uid://r3syoqg1lb8o" path="res://assets/level graphics/vehicles/car.png" id="2_ecar3"]
+
+[resource]
+script = ExtResource("1_xlykm")
+key = "car"
+label = "Car"
+texture = ExtResource("2_ecar3")

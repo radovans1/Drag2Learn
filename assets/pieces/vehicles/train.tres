@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://elcha04rlqa2"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_6npbc"]
+[ext_resource type="Texture2D" uid="uid://dyavchbgejy46" path="res://assets/level graphics/vehicles/train.png" id="2_ojb4b"]
+
+[resource]
+script = ExtResource("1_6npbc")
+key = "train"
+label = "Train"
+texture = ExtResource("2_ojb4b")

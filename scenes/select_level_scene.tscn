@@ -67,8 +67,7 @@ level_path = "res://scenes/main.tscn"
 
 [node name="Level2" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "Food"
-level_path = "res://scenes/main.tscn"
+text = "House"
 
 [node name="Level3" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
@@ -78,12 +77,10 @@ level_path = "res://scenes/level_fruit.tscn"
 [node name="Level4" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
 text = "Vegetables"
-level_path = "res://scenes/main.tscn"
 
 [node name="Level5" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
 text = "Body"
-level_path = "res://scenes/main.tscn"
 
 [node name="Level6" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
@@ -93,7 +90,7 @@ level_path = "res://scenes/level_colors.tscn"
 [node name="Level7" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
 text = "Vehicles"
-level_path = "res://scenes/level_colors.tscn"
+level_path = "res://scenes/level_vehicles.tscn"
 
 [node name="Level8" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2

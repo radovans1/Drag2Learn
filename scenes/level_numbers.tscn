@@ -19,7 +19,7 @@ script = ExtResource("2_k0co1")
 piece = ExtResource("3_t6pr7")
 
 [node name="Label" parent="UI/GridContainer/slot" index="1"]
-text = ""
+text = "One"
 
 [node name="slot5" parent="UI/GridContainer" index="1"]
 piece = ExtResource("4_bdb5a")

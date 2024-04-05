@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://d2i865mv55xkd"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_l66eb"]
+[ext_resource type="Texture2D" uid="uid://b7frjtyc3v8nl" path="res://assets/level graphics/vehicles/motorcycle.png" id="2_244bc"]
+
+[resource]
+script = ExtResource("1_l66eb")
+key = "motorcycle"
+label = "Motorcycle"
+texture = ExtResource("2_244bc")

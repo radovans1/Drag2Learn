@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://b4fuy43o6lama"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_xntux"]
+[ext_resource type="Texture2D" uid="uid://jtt11gxqm8tw" path="res://assets/level graphics/vehicles/bicycle.png" id="2_in3gg"]
+
+[resource]
+script = ExtResource("1_xntux")
+key = "bicycle"
+label = "Bicycle"
+texture = ExtResource("2_in3gg")
