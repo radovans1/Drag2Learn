@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://dh33q7sx8xly3"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://dh33q7sx8xly3"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_3c5tj"]
+[ext_resource type="AudioStream" uid="uid://bbk1dxpwkj2ln" path="res://assets/sounds/vehicles/truck.mp3" id="2_cbb3s"]
 [ext_resource type="Texture2D" uid="uid://bhviogol1ysyx" path="res://assets/level graphics/vehicles/truck.png" id="2_g3twg"]
 
 [resource]
@@ -8,3 +9,4 @@ script = ExtResource("1_3c5tj")
 key = "truck"
 label = "Truck"
 texture = ExtResource("2_g3twg")
+sound = ExtResource("2_cbb3s")

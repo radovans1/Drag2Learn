@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://dpl0ceuyasosx"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_pxukh"]
+[ext_resource type="Texture2D" uid="uid://b4ac2s8h7qi81" path="res://assets/level graphics/shapes/rectangle.png" id="2_43lhj"]
+[ext_resource type="AudioStream" uid="uid://d2cccer6tfdm" path="res://assets/sounds/shapes/rectangle.mp3" id="2_lverq"]
+
+[resource]
+script = ExtResource("1_pxukh")
+key = "rectangle"
+label = "Rectangle"
+texture = ExtResource("2_43lhj")
+sound = ExtResource("2_lverq")

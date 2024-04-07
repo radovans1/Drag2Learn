@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://bfgjf2vuava1o"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_aardp"]
+[ext_resource type="AudioStream" uid="uid://5rru0oudabrx" path="res://assets/sounds/shapes/ellipse.mp3" id="2_lij70"]
+[ext_resource type="Texture2D" uid="uid://orc1j8upw41n" path="res://assets/level graphics/shapes/elipse.png" id="2_s64vq"]
+
+[resource]
+script = ExtResource("1_aardp")
+key = "ellipse"
+label = "Ellipse"
+texture = ExtResource("2_s64vq")
+sound = ExtResource("2_lij70")

@@ -18,6 +18,9 @@ script = ExtResource("2_8kc48")
 [node name="slot" parent="UI/GridContainer" index="0"]
 piece = ExtResource("3_jnvt2")
 
+[node name="Label" parent="UI/GridContainer/slot" index="1"]
+text = "Airplane"
+
 [node name="slot5" parent="UI/GridContainer" index="1"]
 piece = ExtResource("4_bk8rm")
 

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://nr8x76t3n31i"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_tbcso"]
+[ext_resource type="AudioStream" uid="uid://b10iraibwm3ac" path="res://assets/sounds/vegetables/pumpkin.mp3" id="2_54kwx"]
+[ext_resource type="Texture2D" uid="uid://bqii3syqa0o8v" path="res://assets/level graphics/vegetables/pumpkin.png" id="2_j8h7p"]
+
+[resource]
+script = ExtResource("1_tbcso")
+key = "pumpkin"
+label = "Pumpkin"
+texture = ExtResource("2_j8h7p")
+sound = ExtResource("2_54kwx")

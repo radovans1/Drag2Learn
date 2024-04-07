@@ -1,0 +1,49 @@
+[gd_scene load_steps=12 format=3 uid="uid://bnfngtgm4mqi7"]
+
+[ext_resource type="PackedScene" uid="uid://dqabaemjt44th" path="res://scenes/main.tscn" id="1_sj8jm"]
+[ext_resource type="Script" path="res://scripts/level_body.gd" id="2_ysln0"]
+[ext_resource type="Resource" uid="uid://6d4nrespxcag" path="res://assets/pieces/body/arm.tres" id="3_j2p4j"]
+[ext_resource type="Resource" uid="uid://r3xxccdrxrfk" path="res://assets/pieces/body/hand.tres" id="4_dmtve"]
+[ext_resource type="Resource" uid="uid://c0u1x1f8db6nt" path="res://assets/pieces/body/mouth.tres" id="5_7s783"]
+[ext_resource type="Resource" uid="uid://h873go48js1d" path="res://assets/pieces/body/ear.tres" id="6_b8pju"]
+[ext_resource type="Resource" uid="uid://bb5uac1mj53uy" path="res://assets/pieces/body/head.tres" id="7_q57y8"]
+[ext_resource type="Resource" uid="uid://cqewsu8oebkjw" path="res://assets/pieces/body/eye.tres" id="8_iy36q"]
+[ext_resource type="Resource" uid="uid://bcre0h5glf625" path="res://assets/pieces/body/nose.tres" id="9_qgujr"]
+[ext_resource type="Resource" uid="uid://cqaaanjr0vunx" path="res://assets/pieces/body/leg.tres" id="10_ynfdr"]
+[ext_resource type="Resource" uid="uid://h5ichmy2rwu7" path="res://assets/pieces/body/foot.tres" id="11_gvel5"]
+
+[node name="level_body" instance=ExtResource("1_sj8jm")]
+script = ExtResource("2_ysln0")
+
+[node name="slot" parent="UI/GridContainer" index="0"]
+piece = ExtResource("3_j2p4j")
+
+[node name="Label" parent="UI/GridContainer/slot" index="1"]
+text = "Arm"
+
+[node name="slot5" parent="UI/GridContainer" index="1"]
+piece = ExtResource("4_dmtve")
+
+[node name="slot6" parent="UI/GridContainer" index="2"]
+piece = ExtResource("5_7s783")
+
+[node name="slot7" parent="UI/GridContainer" index="3"]
+piece = ExtResource("6_b8pju")
+
+[node name="slot8" parent="UI/GridContainer" index="4"]
+piece = ExtResource("7_q57y8")
+
+[node name="slot9" parent="UI/GridContainer" index="5"]
+piece = ExtResource("8_iy36q")
+
+[node name="slot2" parent="UI/GridContainer" index="6"]
+piece = ExtResource("9_qgujr")
+
+[node name="slot3" parent="UI/GridContainer" index="7"]
+piece = ExtResource("10_ynfdr")
+
+[node name="slot4" parent="UI/GridContainer" index="8"]
+piece = ExtResource("11_gvel5")
+
+[editable path="UI/GridContainer/slot"]
+[editable path="UI/PieceSlot"]

@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://djfvl3e2orjix"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://djfvl3e2orjix"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_65530"]
 [ext_resource type="Texture2D" uid="uid://vi75cr5ye4n1" path="res://assets/level graphics/vehicles/bus.png" id="2_4oibv"]
+[ext_resource type="AudioStream" uid="uid://fhgdtcdrkyg1" path="res://assets/sounds/vehicles/bus.mp3" id="2_rchqv"]
 
 [resource]
 script = ExtResource("1_65530")
 key = "bus"
 label = "Bus"
 texture = ExtResource("2_4oibv")
+sound = ExtResource("2_rchqv")

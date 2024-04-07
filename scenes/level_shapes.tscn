@@ -1,0 +1,46 @@
+[gd_scene load_steps=12 format=3 uid="uid://dpouru3w5pi6w"]
+
+[ext_resource type="PackedScene" uid="uid://dqabaemjt44th" path="res://scenes/main.tscn" id="1_0sd3i"]
+[ext_resource type="Script" path="res://scripts/level_shapes.gd" id="2_a1852"]
+[ext_resource type="Resource" uid="uid://cvbositrgw5s3" path="res://assets/pieces/shapes/circle.tres" id="3_cj77w"]
+[ext_resource type="Resource" uid="uid://bfgjf2vuava1o" path="res://assets/pieces/shapes/ellipse.tres" id="4_fgd5l"]
+[ext_resource type="Resource" uid="uid://d1p373boe1du4" path="res://assets/pieces/shapes/hexagon.tres" id="5_gsvdo"]
+[ext_resource type="Resource" uid="uid://dpl0ceuyasosx" path="res://assets/pieces/shapes/rectangle.tres" id="6_k4k7m"]
+[ext_resource type="Resource" uid="uid://dqxdb1tsa4rxw" path="res://assets/pieces/shapes/heart.tres" id="7_xmjcf"]
+[ext_resource type="Resource" uid="uid://dx2ps13tscpge" path="res://assets/pieces/shapes/pentagon.tres" id="8_bmp0l"]
+[ext_resource type="Resource" uid="uid://hc8hi7q2oe46" path="res://assets/pieces/shapes/star.tres" id="9_rmnkf"]
+[ext_resource type="Resource" uid="uid://bm2glhbd7phy5" path="res://assets/pieces/shapes/square.tres" id="10_x86gl"]
+[ext_resource type="Resource" uid="uid://jkyrqmujg7rr" path="res://assets/pieces/shapes/triangle.tres" id="11_j6dtm"]
+
+[node name="level_shapes" instance=ExtResource("1_0sd3i")]
+script = ExtResource("2_a1852")
+
+[node name="slot" parent="UI/GridContainer" index="0"]
+piece = ExtResource("3_cj77w")
+
+[node name="slot5" parent="UI/GridContainer" index="1"]
+piece = ExtResource("4_fgd5l")
+
+[node name="slot6" parent="UI/GridContainer" index="2"]
+piece = ExtResource("5_gsvdo")
+
+[node name="slot7" parent="UI/GridContainer" index="3"]
+piece = ExtResource("6_k4k7m")
+
+[node name="slot8" parent="UI/GridContainer" index="4"]
+piece = ExtResource("7_xmjcf")
+
+[node name="slot9" parent="UI/GridContainer" index="5"]
+piece = ExtResource("8_bmp0l")
+
+[node name="slot2" parent="UI/GridContainer" index="6"]
+piece = ExtResource("9_rmnkf")
+
+[node name="slot3" parent="UI/GridContainer" index="7"]
+piece = ExtResource("10_x86gl")
+
+[node name="slot4" parent="UI/GridContainer" index="8"]
+piece = ExtResource("11_j6dtm")
+
+[editable path="UI/GridContainer/slot"]
+[editable path="UI/PieceSlot"]

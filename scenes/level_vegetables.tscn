@@ -1,0 +1,49 @@
+[gd_scene load_steps=12 format=3 uid="uid://cln1magudvdux"]
+
+[ext_resource type="PackedScene" uid="uid://dqabaemjt44th" path="res://scenes/main.tscn" id="1_ltx2n"]
+[ext_resource type="Script" path="res://scripts/level_vegetables.gd" id="2_cxn2t"]
+[ext_resource type="Resource" uid="uid://dlcwn0kmuqp16" path="res://assets/pieces/vegetables/cucumber.tres" id="3_04cds"]
+[ext_resource type="Resource" uid="uid://drs63b81sbn8v" path="res://assets/pieces/vegetables/carrot.tres" id="4_nq4hf"]
+[ext_resource type="Resource" uid="uid://1l5rndcdjp0h" path="res://assets/pieces/vegetables/mushroom.tres" id="5_j3f64"]
+[ext_resource type="Resource" uid="uid://dk37tvcbcp564" path="res://assets/pieces/vegetables/onion.tres" id="6_igtid"]
+[ext_resource type="Resource" uid="uid://bnjdp415f3xvc" path="res://assets/pieces/vegetables/broccoli.tres" id="7_w7bbn"]
+[ext_resource type="Resource" uid="uid://dy57vtyup2dvo" path="res://assets/pieces/vegetables/pepper.tres" id="8_0fsa8"]
+[ext_resource type="Resource" uid="uid://0bb5wlj7sclk" path="res://assets/pieces/vegetables/potato.tres" id="9_8u1x2"]
+[ext_resource type="Resource" uid="uid://nr8x76t3n31i" path="res://assets/pieces/vegetables/pumpkin.tres" id="10_bjs1t"]
+[ext_resource type="Resource" uid="uid://1xi50thecuf1" path="res://assets/pieces/vegetables/tomato.tres" id="11_y74l0"]
+
+[node name="level_vegetables" instance=ExtResource("1_ltx2n")]
+script = ExtResource("2_cxn2t")
+
+[node name="slot" parent="UI/GridContainer" index="0"]
+piece = ExtResource("3_04cds")
+
+[node name="Label" parent="UI/GridContainer/slot" index="1"]
+text = "Cucumber"
+
+[node name="slot5" parent="UI/GridContainer" index="1"]
+piece = ExtResource("4_nq4hf")
+
+[node name="slot6" parent="UI/GridContainer" index="2"]
+piece = ExtResource("5_j3f64")
+
+[node name="slot7" parent="UI/GridContainer" index="3"]
+piece = ExtResource("11_y74l0")
+
+[node name="slot8" parent="UI/GridContainer" index="4"]
+piece = ExtResource("7_w7bbn")
+
+[node name="slot9" parent="UI/GridContainer" index="5"]
+piece = ExtResource("8_0fsa8")
+
+[node name="slot2" parent="UI/GridContainer" index="6"]
+piece = ExtResource("9_8u1x2")
+
+[node name="slot3" parent="UI/GridContainer" index="7"]
+piece = ExtResource("10_bjs1t")
+
+[node name="slot4" parent="UI/GridContainer" index="8"]
+piece = ExtResource("6_igtid")
+
+[editable path="UI/GridContainer/slot"]
+[editable path="UI/PieceSlot"]

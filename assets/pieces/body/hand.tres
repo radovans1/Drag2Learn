@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://r3xxccdrxrfk"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_mpn2s"]
+[ext_resource type="AudioStream" uid="uid://ck4tv4k2cw3jg" path="res://assets/sounds/body/hand.mp3" id="2_6h40h"]
+[ext_resource type="Texture2D" uid="uid://bckl6riliggx5" path="res://assets/level graphics/body/hand.png" id="2_prxp1"]
+
+[resource]
+script = ExtResource("1_mpn2s")
+key = "hand"
+label = "Hand"
+texture = ExtResource("2_prxp1")
+sound = ExtResource("2_6h40h")

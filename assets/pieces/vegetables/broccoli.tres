@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://bnjdp415f3xvc"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_mpe60"]
+[ext_resource type="AudioStream" uid="uid://ds4cqb7y8grpt" path="res://assets/sounds/vegetables/broccoli.mp3" id="2_bbwrf"]
+[ext_resource type="Texture2D" uid="uid://cg2iugurrn2h5" path="res://assets/level graphics/vegetables/broccoli.png" id="2_oomn6"]
+
+[resource]
+script = ExtResource("1_mpe60")
+key = "broccoli"
+label = "Broccoli"
+texture = ExtResource("2_oomn6")
+sound = ExtResource("2_bbwrf")

@@ -98,6 +98,6 @@ flat = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="pressed" from="NextLevelButton" to="." method="_on_next_level_button_pressed"]
-[connection signal="pressed" from="MenuButton" to="." method="_on_next_level_button_pressed"]
 [connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_next_level_button_pressed"]
 [connection signal="pressed" from="RepeatLevelButton" to="." method="_on_repeat_level_button_pressed"]

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://cqaaanjr0vunx"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_fy7xt"]
+[ext_resource type="AudioStream" uid="uid://cr1kg13rei1cj" path="res://assets/sounds/body/leg.mp3" id="2_0xp80"]
+[ext_resource type="Texture2D" uid="uid://bsk6h8dowvyfo" path="res://assets/level graphics/body/leg.png" id="2_8l56b"]
+
+[resource]
+script = ExtResource("1_fy7xt")
+key = "leg"
+label = "Leg"
+texture = ExtResource("2_8l56b")
+sound = ExtResource("2_0xp80")

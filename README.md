@@ -1,2 +1,2 @@
 # DRAGnDROP_game
- Bc. university project 
+ Bachelors project - simple drag & drop game that can be helpful in vocabulary learning proccess for kids and beginners

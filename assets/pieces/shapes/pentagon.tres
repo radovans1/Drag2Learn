@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://dx2ps13tscpge"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_dmc48"]
+[ext_resource type="AudioStream" uid="uid://dqc8yl8wnvsv6" path="res://assets/sounds/shapes/pentagon.mp3" id="2_hnw61"]
+[ext_resource type="Texture2D" uid="uid://dem7c7ohu4uvs" path="res://assets/level graphics/shapes/pentagon.png" id="2_wjtcf"]
+
+[resource]
+script = ExtResource("1_dmc48")
+key = "pentagon"
+label = "Pentagon"
+texture = ExtResource("2_wjtcf")
+sound = ExtResource("2_hnw61")

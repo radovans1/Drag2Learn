@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://1l5rndcdjp0h"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_5hs0c"]
+[ext_resource type="AudioStream" uid="uid://o0ewn84lltd8" path="res://assets/sounds/vegetables/mushroom.mp3" id="2_fem6l"]
+[ext_resource type="Texture2D" uid="uid://c5o0o0d4cs2fi" path="res://assets/level graphics/vegetables/mushroom.png" id="2_non3g"]
+
+[resource]
+script = ExtResource("1_5hs0c")
+key = "mushroom"
+label = "Mushroom"
+texture = ExtResource("2_non3g")
+sound = ExtResource("2_fem6l")

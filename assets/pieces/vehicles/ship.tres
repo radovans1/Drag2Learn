@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=3 format=3 uid="uid://b3e066b41bdq1"]
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://b3e066b41bdq1"]
 
 [ext_resource type="Script" path="res://scripts/piece.gd" id="1_f57bx"]
+[ext_resource type="AudioStream" uid="uid://b74dfe6uxouxy" path="res://assets/sounds/vehicles/ship.mp3" id="2_1fsb0"]
 [ext_resource type="Texture2D" uid="uid://bm4q2kike8dbv" path="res://assets/level graphics/vehicles/ship.png" id="2_g5ccc"]
 
 [resource]
@@ -8,3 +9,4 @@ script = ExtResource("1_f57bx")
 key = "ship"
 label = "Ship"
 texture = ExtResource("2_g5ccc")
+sound = ExtResource("2_1fsb0")

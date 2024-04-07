@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://drs63b81sbn8v"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_82r3t"]
+[ext_resource type="AudioStream" uid="uid://1713dd16kt7b" path="res://assets/sounds/vegetables/carrot.mp3" id="2_hen4v"]
+[ext_resource type="Texture2D" uid="uid://bup6na18mv3do" path="res://assets/level graphics/vegetables/carrot.png" id="2_js5uw"]
+
+[resource]
+script = ExtResource("1_82r3t")
+key = "carrot"
+label = "Carrot"
+texture = ExtResource("2_js5uw")
+sound = ExtResource("2_hen4v")

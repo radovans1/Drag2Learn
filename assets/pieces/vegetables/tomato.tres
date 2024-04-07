@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://1xi50thecuf1"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_o2ccc"]
+[ext_resource type="Texture2D" uid="uid://cklghpb8a8dfw" path="res://assets/level graphics/vegetables/tomato.png" id="2_5p4o4"]
+[ext_resource type="AudioStream" uid="uid://bakwkdiafuuvw" path="res://assets/sounds/vegetables/tomato.mp3" id="2_befly"]
+
+[resource]
+script = ExtResource("1_o2ccc")
+key = "tomato"
+label = "Tomato"
+texture = ExtResource("2_5p4o4")
+sound = ExtResource("2_befly")

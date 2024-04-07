@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=4 format=3 uid="uid://d1p373boe1du4"]
+
+[ext_resource type="Script" path="res://scripts/piece.gd" id="1_4c4p5"]
+[ext_resource type="Texture2D" uid="uid://qdtdyqlffyt1" path="res://assets/level graphics/shapes/hexagon.png" id="2_d6ub8"]
+[ext_resource type="AudioStream" uid="uid://wvi27bvnjshb" path="res://assets/sounds/shapes/hexagon.mp3" id="2_u7bpd"]
+
+[resource]
+script = ExtResource("1_4c4p5")
+key = "hexagon"
+label = "Hexagon"
+texture = ExtResource("2_d6ub8")
+sound = ExtResource("2_u7bpd")

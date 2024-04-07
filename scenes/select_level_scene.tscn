@@ -62,30 +62,33 @@ columns = 3
 
 [node name="Level1" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "Animals"
-level_path = "res://scenes/main.tscn"
+text = "Numbers"
+level_path = "res://scenes/level_numbers.tscn"
 
 [node name="Level2" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "House"
+text = "Colors"
+level_path = "res://scenes/level_colors.tscn"
 
 [node name="Level3" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "Fruit"
-level_path = "res://scenes/level_fruit.tscn"
+text = "Animals"
+level_path = "res://scenes/main.tscn"
 
 [node name="Level4" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
 text = "Vegetables"
+level_path = "res://scenes/level_vegetables.tscn"
 
 [node name="Level5" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
 text = "Body"
+level_path = "res://scenes/level_body.tscn"
 
 [node name="Level6" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "Colors"
-level_path = "res://scenes/level_colors.tscn"
+text = "Fruit"
+level_path = "res://scenes/level_fruit.tscn"
 
 [node name="Level7" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
@@ -99,8 +102,8 @@ level_path = "res://scenes/level_clothes.tscn"
 
 [node name="Level9" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "Numbers"
-level_path = "res://scenes/level_numbers.tscn"
+text = "Shapes"
+level_path = "res://scenes/level_shapes.tscn"
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
