@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://dg1l1e27qlhq7" path="res://assets/fonts/Madimi_One/MadimiOne-Regular.ttf" id="2_8fjsd"]
 [ext_resource type="Texture2D" uid="uid://bae1km6ujs2kh" path="res://assets/small_assets/arrow_right.png" id="2_abugq"]
 [ext_resource type="Texture2D" uid="uid://bnexl3ipqqhen" path="res://assets/small_assets/arrow_again.png" id="3_4f627"]
-[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="4_l4324"]
+[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button_green.tres" id="4_l4324"]
 
 [node name="PopupPanel" type="Window"]
 transparent_bg = true

@@ -1,13 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://b1duc1g32mvhc"]
+[gd_scene load_steps=12 format=3 uid="uid://b1duc1g32mvhc"]
 
 [ext_resource type="FontFile" uid="uid://dg1l1e27qlhq7" path="res://assets/fonts/Madimi_One/MadimiOne-Regular.ttf" id="1_fyd3q"]
 [ext_resource type="Texture2D" uid="uid://b7bmjnpp4nl64" path="res://assets/background/level_background/66px_5zu1_230310.jpg" id="1_wcrie"]
 [ext_resource type="PackedScene" uid="uid://c7h4iic4i2pts" path="res://scenes/level_button.tscn" id="3_0a0xj"]
 [ext_resource type="Texture2D" uid="uid://mnr82hjqj51v" path="res://assets/small_assets/arrow_left.png" id="3_1weev"]
-[ext_resource type="Script" path="res://scripts/BackButton.gd" id="3_3ya1u"]
-[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="4_dkdec"]
+[ext_resource type="Theme" uid="uid://d1aiv7kcabp0u" path="res://themes/button_orange.tres" id="4_04e12"]
+[ext_resource type="Theme" uid="uid://c6ny4uqpa8yrb" path="res://themes/button_blue.tres" id="4_5omvu"]
+[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button_green.tres" id="4_dkdec"]
 [ext_resource type="Texture2D" uid="uid://bawbh53h0vu4e" path="res://assets/character/character vector 1.1.png" id="5_diib7"]
+[ext_resource type="Theme" uid="uid://rlrfgj30byt" path="res://themes/button_red.tres" id="5_gdsak"]
 [ext_resource type="AudioStream" uid="uid://b1omv40161ype" path="res://assets/sounds/introduction.mp3" id="6_krrmd"]
+[ext_resource type="Script" path="res://scripts/BackButton_select_level_scene.gd" id="9_c5m45"]
 
 [node name="SelectLevelScene" type="Control"]
 layout_mode = 3
@@ -62,46 +65,55 @@ columns = 3
 
 [node name="Level1" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
+theme = ExtResource("4_5omvu")
 text = "Numbers"
 level_path = "res://scenes/level_numbers.tscn"
 
 [node name="Level2" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
+theme = ExtResource("4_5omvu")
 text = "Colors"
 level_path = "res://scenes/level_colors.tscn"
 
 [node name="Level3" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
+theme = ExtResource("4_5omvu")
 text = "Animals"
 level_path = "res://scenes/main.tscn"
 
 [node name="Level4" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
+theme = ExtResource("4_04e12")
 text = "Vegetables"
 level_path = "res://scenes/level_vegetables.tscn"
 
 [node name="Level5" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
-text = "Body"
-level_path = "res://scenes/level_body.tscn"
-
-[node name="Level6" parent="GridContainer" instance=ExtResource("3_0a0xj")]
-layout_mode = 2
+theme = ExtResource("4_04e12")
 text = "Fruit"
 level_path = "res://scenes/level_fruit.tscn"
 
+[node name="Level6" parent="GridContainer" instance=ExtResource("3_0a0xj")]
+layout_mode = 2
+theme = ExtResource("4_04e12")
+text = "Body"
+level_path = "res://scenes/level_body.tscn"
+
 [node name="Level7" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
+theme = ExtResource("5_gdsak")
 text = "Vehicles"
 level_path = "res://scenes/level_vehicles.tscn"
 
 [node name="Level8" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
+theme = ExtResource("5_gdsak")
 text = "Clothes"
 level_path = "res://scenes/level_clothes.tscn"
 
 [node name="Level9" parent="GridContainer" instance=ExtResource("3_0a0xj")]
 layout_mode = 2
+theme = ExtResource("5_gdsak")
 text = "Shapes"
 level_path = "res://scenes/level_shapes.tscn"
 
@@ -114,7 +126,7 @@ offset_bottom = 78.0
 theme = ExtResource("4_dkdec")
 text = "Back"
 icon = ExtResource("3_1weev")
-script = ExtResource("3_3ya1u")
+script = ExtResource("9_c5m45")
 
 [node name="CharacterVector1_1" type="Sprite2D" parent="."]
 position = Vector2(959, 310)
@@ -123,7 +135,6 @@ texture = ExtResource("5_diib7")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_krrmd")
-autoplay = true
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/level_button.gd" id="1_oslii"]
 [ext_resource type="FontFile" uid="uid://dg1l1e27qlhq7" path="res://assets/fonts/Madimi_One/MadimiOne-Regular.ttf" id="1_ov4pi"]
-[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="1_xu8y0"]
+[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button_green.tres" id="1_xu8y0"]
 [ext_resource type="AudioStream" uid="uid://crhk7d68tcwad" path="res://assets/sounds/bloop_buttton_sound.mp3" id="4_ebgxj"]
 
 [node name="LevelButton" type="Button"]

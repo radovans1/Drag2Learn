@@ -13,7 +13,7 @@
 [ext_resource type="Resource" uid="uid://djcov1ibicmjw" path="res://assets/pieces/animals/mouse.tres" id="11_gmroy"]
 [ext_resource type="Resource" uid="uid://b7ll3xnwycn8k" path="res://assets/pieces/animals/horse.tres" id="12_ecehx"]
 [ext_resource type="PackedScene" uid="uid://b1yn774ts8iud" path="res://scenes/score.tscn" id="12_p7xm5"]
-[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button.tres" id="13_da5wk"]
+[ext_resource type="Theme" uid="uid://bvbo7dcnmx1ag" path="res://themes/button_green.tres" id="13_da5wk"]
 [ext_resource type="PackedScene" uid="uid://c8bxqw8o88jqj" path="res://scenes/popup.tscn" id="13_tjin3"]
 [ext_resource type="PackedScene" uid="uid://s4xejticmnyx" path="res://scenes/pause_menu.tscn" id="14_hfyfv"]
 [ext_resource type="Texture2D" uid="uid://mnr82hjqj51v" path="res://assets/small_assets/arrow_left.png" id="14_tml2m"]

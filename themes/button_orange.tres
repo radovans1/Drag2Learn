@@ -1,0 +1,35 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://d1aiv7kcabp0u"]
+
+[ext_resource type="FontFile" uid="uid://dg1l1e27qlhq7" path="res://assets/fonts/Madimi_One/MadimiOne-Regular.ttf" id="1_wgik7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0abo7"]
+bg_color = Color(0.952941, 0.827451, 0.203922, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pccr"]
+content_margin_left = 11.0
+bg_color = Color(0.980392, 0.65098, 0, 0.733333)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
+shadow_offset = Vector2(2, 2)
+
+[resource]
+Button/fonts/font = ExtResource("1_wgik7")
+Button/styles/hover = SubResource("StyleBoxFlat_0abo7")
+Button/styles/normal = SubResource("StyleBoxFlat_7pccr")
