@@ -10,9 +10,12 @@ config_version=5
 
 [application]
 
-config/name="inventory"
+config/name="Drag2Learn"
 run/main_scene="res://scenes/mainpanel.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
+boot_splash/show_image=false
+boot_splash/image="res://assets/logo/INTRO_Drag2Learn.mp4"
 config/icon="res://assets/character/character vector 1.1.png"
 
 [display]

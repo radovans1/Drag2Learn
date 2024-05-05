@@ -71,6 +71,7 @@ func _drop_data(_at_position, data):
 		else:
 			#var incorrect_texture = preload("res://assets/character/character vector tongue.png")
 			emit_signal("animal_dropped", false)
+			$Incorrect.play()
 			#flash_warning_color()
 			show_warning_message("Wrong, Try again!")
 	

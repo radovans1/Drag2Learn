@@ -122,6 +122,9 @@ is_source = true
 [node name="TextureRect" parent="UI/PieceSlot" index="0"]
 size_flags_horizontal = 4
 
+[node name="SoundPlayer" parent="UI/PieceSlot" index="2"]
+stream = ExtResource("18_6bwki")
+
 [node name="BackButton" type="Button" parent="UI"]
 layout_mode = 0
 offset_left = 27.0
