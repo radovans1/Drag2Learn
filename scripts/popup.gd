@@ -17,11 +17,17 @@ func setup(correct: int, incorrect: int, score: int):
 	$HBoxContainer/IncorrectCountLabel.text = "Incorrect answers: %s " % str(incorrect_count)
 	$HBoxContainer/TotalScoreLabel.text = "Total Score: %s " %str(total_score)
 	
+	print("Correct: ", correct_count)
+	print("Incorrect: ", incorrect_count)
+	print("Score: ", total_score)
+	
 func show_results():
+	print("Showing results popup.")
 	popup_centered()
 	
 	
 func _on_close_requested():
+	print("Closing results popup.")
 	hide()
 	get_tree().change_scene_to_file("res://scenes/mainpanel.tscn")
 
@@ -31,7 +37,18 @@ func _on_next_level_button_pressed():
 
 
 func _on_repeat_level_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	pass
 
 func _on_menu_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/select_level_scene.tscn")
+
+
+
+
+
+
+
+
+
+
+

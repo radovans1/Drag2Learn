@@ -70,8 +70,9 @@ level_path = "res://scenes/select_level_scene.tscn"
 [node name="SettingsButton" parent="background/VBoxContainer/VBoxContainer" instance=ExtResource("6_h7klh")]
 layout_mode = 2
 theme_override_font_sizes/font_size = 60
-text = "Settings"
+text = "Instructions"
 script = ExtResource("8_06cot")
+level_path = "res://scenes/instructions_screen.tscn"
 
 [node name="EndButton" parent="background/VBoxContainer/VBoxContainer" instance=ExtResource("6_h7klh")]
 layout_mode = 2
